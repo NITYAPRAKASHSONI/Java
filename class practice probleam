@@ -1,0 +1,22 @@
+class Java{
+    public double l ,b;
+    public double area(){
+        return l*b;
+    }
+    public double perimeter(){
+        return 2*(l+b);
+    }
+    public boolean isSquare()
+    {
+        return l==b;
+    }
+    public static void main(String args[])
+    {
+        Java rec=new Java();
+       rec.l=8;
+       rec.b=7;
+       System.out.println("Area of rectangle is ="+rec.area());
+       System.out.println("perimeter of rectangle is="+rec.perimeter());
+       System.out.println(rec.isSquare());
+    }
+}
