@@ -1,0 +1,44 @@
+class Java{
+    public int roll_no,m1,m2,m3;
+    public String name,course;
+    public double marks;
+    public int roll()
+            {
+     return roll_no;
+}
+    public String name(){
+        return name;
+    }
+    public String course(){
+        return course;
+    }
+    public double marks(){
+        return m1+m2+m3;
+    }
+    public double avg(){
+         return (marks())/3;
+    }
+    public char grade(){
+        if(avg()>60)
+            return 'A';
+        else 
+            return 'B';
+    }
+    
+    public static void main(String args[])
+    {
+        Java n =new Java();
+        n.roll_no=17070;
+        n.name="Sunder pichai";
+        n.course=" chemical engineering";
+        n.m1=60;
+        n.m2=70;
+        n.m3=90;
+        System.out.println("roll no is="+n.roll());
+        System.out.println("name="+n.name());
+        System.out.println("course is="+n.course());
+        System.out.println("marks is="+n.marks());
+        System.out.println("average is="+n.avg());
+        System.out.println("garde is="+n.grade());
+    }
+}
