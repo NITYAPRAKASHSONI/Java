@@ -1,0 +1,14 @@
+public class Java{
+    public static void main(String args[])
+    {
+        int i,j,t;
+        int a [] = {3,5,-4,8,11,1,-1,6};
+        java.util.Arrays.sort(a);
+       for(int x:a)
+       {
+           System.out.print(x + " ");
+       }
+       
+      
+    }
+}
