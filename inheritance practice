@@ -1,0 +1,33 @@
+class Java{
+    public double radius;
+    public double area(){
+        return Math.PI*radius*radius;
+    }
+    public double perimeter(){
+        return 2*Math.PI*radius;
+    }
+    public double circumference(){
+        return perimeter();
+    }
+  static  class Cylinder extends Java{
+        public double height;
+        public double volume(){
+            return  area()*height;
+        }
+    //public double height(){
+      //  return 10;
+   // }
+}
+    public static void main(String args[])
+    {
+        Java c1=new Java();
+        Cylinder c2=new Cylinder();
+        c1.radius=8;
+        c2.height=12;
+        c2.radius=15;
+        System.out.println("Area of circle = " + c1.area());
+        System.out.println("perimeter of circle = " + c1.perimeter());
+        System.out.println("circumference of circle = " + c1.circumference());
+        System.out.println("volume of cylinder is = " + c2.volume());
+    }
+}
