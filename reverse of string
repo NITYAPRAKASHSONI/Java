@@ -1,0 +1,23 @@
+import java.lang.*;
+import java.util.*;
+public class Project{
+    public static void main(String args[])
+    {
+        String str;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string");
+        str=sc.nextLine();
+       ;
+        int r=str.length();
+        System.out.println("Reverce string is :");
+        while(r>0)
+
+        {
+         System.out.print(str.charAt(r-1));
+        
+          r--;
+        }
+                
+        
+    }
+}
