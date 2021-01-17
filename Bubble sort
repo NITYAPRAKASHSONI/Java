@@ -1,0 +1,40 @@
+import java.lang.*;
+import java.util.*;
+public class Project{
+    public static void main(String args[])
+    {
+        int n,i,j,t;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the last term for an array");
+        n=s.nextInt();
+        int arr[]=new int[n];
+        System.out.println("enter the element of an array");
+        for(i=0;i<arr.length;i++)
+        {
+            arr[i]=s.nextInt();
+        }
+        System.out.println("array before sorting");
+        for(i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i] + " ");
+        }
+        for(i=0;i<arr.length;i++)
+        {
+            for(j=0;j<arr.length-1;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    t=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=t;
+                }
+            }
+        }
+        System.out.println("Array after bubble sort in ascending order");
+        for(i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i] + " ");
+            
+        }
+    }
+}
