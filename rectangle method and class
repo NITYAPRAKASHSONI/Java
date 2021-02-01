@@ -1,0 +1,26 @@
+class Project{
+    public double length,breadth;
+    public double area()
+            
+    {
+        return length*breadth;
+    }
+    public double perimeter()
+    {
+        return 2*(length+breadth);
+    }
+    public boolean isSquare()
+    {
+        return length==breadth;
+    }
+    public static void main(String args[])
+            
+    {
+        Project p=new Project();
+        p.length=5;
+        p.breadth=8;
+        System.out.println("area is="+p.area());
+        System.out.println("perimeter is="+p.perimeter());
+        System.out.println("is square or not ? ="+p.isSquare());
+    }
+}
