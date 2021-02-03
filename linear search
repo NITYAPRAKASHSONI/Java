@@ -1,0 +1,16 @@
+class Project {
+    public static void main(String args[])
+    {
+        int i,key=56;
+        int a[]={3,45,63,42,43,665,75,23,56,78,23};
+        for(i=0;i<a.length;i++)
+        {
+            if(key==a[i])
+            {
+                System.out.println("index found at postion=" +i);
+            }
+            
+        }
+        
+    }
+}
