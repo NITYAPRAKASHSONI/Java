@@ -1,0 +1,28 @@
+class Project{
+    public int l,b;
+   public int rectangle()
+   {
+       return l*b;
+   }
+  static class  Cuboid extends Project{
+       public int h;
+       public int vulume(){
+           return rectangle()*h;
+       }
+    
+       
+   }
+   public static void main(String args[])
+   {
+       Project p1=new Project();
+       p1.l=10;
+       p1.b=5;
+       System.out.println(p1.rectangle());
+       Cuboid c1=new Cuboid();
+       c1.h=20;
+       c1.l=10;
+       c1.b=5;
+       System.out.println(c1.vulume());
+       
+   }
+}
