@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Solution
+{
+  public static void main(String args[])
+  {
+    int n,i,j=0,count=0;
+    Scanner s=new Scanner(System.in);
+    n=s.nextInt();
+    int ar[]=new int[n];
+    for(i=0;i<n;i++)
+    {
+      ar[i]=s.nextInt();
+      
+    }
+    Arrays.sort(ar);
+    while(j<n-1)
+    {
+      if(ar[j]==ar[j+1])
+      {
+        j=j+2;
+        count++;
+        continue;
+      }
+      j++;
+    }
+    System.out.println(count);
+    
+    
+    
+  }
+}
