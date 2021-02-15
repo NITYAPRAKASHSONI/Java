@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Project {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the two string to check anagram  ");
+        String s1=s.nextLine();
+        String s2=s.nextLine();
+        s1=s1.toLowerCase();
+        s2=s2.toLowerCase();
+        char a[]=s1.toCharArray();
+        char b[]=s2.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+       String sort1=new String(a);
+       String sort2=new String(b);
+        if(sort1.equals(sort2))
+        {
+            System.out.println("Anagram");
+        }
+        else
+        {
+            System.out.println("not an anagram");
+        }
+        
+    }
+}
