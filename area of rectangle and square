@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Project
+{
+    static double areaOfRectangle(double l, double b )
+    {
+        if(l==b)
+        {
+            System.out.println("it is square");
+            return l*l;
+        }
+    else
+        {
+            System.out.println("it is rectangle");
+            return l*b;
+        }
+        
+            
+    }
+    public static void main(String args[])
+    {
+        double l,b;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the length and breadth");
+        l=s.nextDouble();
+        b=s.nextDouble();
+        System.out.println(areaOfRectangle(l,b));
+    }
+}
