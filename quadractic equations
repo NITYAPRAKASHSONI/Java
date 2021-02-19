@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Project {
+    public static void main(String args[])
+    {
+        double a,b,c,r1,r2,t,d=0;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the coffient of quadratics quations");
+        a=s.nextDouble();
+        b=s.nextDouble();
+        c=s.nextDouble();
+        t=b*b-4*a*c;
+        if(t<0)
+        {
+           System.out.println("enter the valid coffient");
+        }
+        else{
+            
+             d= Math.sqrt(t);
+        }
+        r1=(-b+d)/(2*a);
+        r2=(-b-d)/(2*a);
+        System.out.println("roots of quadratic eqations are =" + r1 + " " + r2);
+    }
+}
