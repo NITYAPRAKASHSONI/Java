@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class power{
+    public double m,n;
+    public double pow()
+    {
+        if(n==0)
+            return 1;
+        else
+            return Math.pow(m, n-1)*m;
+    }
+}
+public class Project{
+    public static void main(String args[])
+    {
+        double m,n;
+        Scanner s=new Scanner(System.in);
+        power p=new power();
+        System.out.println("enter the two number to find m^n");
+        p.m=s.nextDouble();
+        p.n=s.nextDouble();
+        System.out.println("power is ="+ p.pow());
+        
+    }
+}
