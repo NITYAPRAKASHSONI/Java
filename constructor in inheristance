@@ -1,0 +1,30 @@
+class parent
+{
+    public parent()
+    {
+        System.out.println(" i am parent class ");
+    }
+}
+class child extends parent
+{
+    public child()
+    {
+        System.out.println("i am child class");
+    }
+}
+class grandchild extends child
+{
+public grandchild(){
+    System.out.print("i am grand child");
+
+}
+
+
+}
+public class Project {
+    public static void main(String args[])
+    {
+        grandchild p=new grandchild();
+       
+    }
+}
