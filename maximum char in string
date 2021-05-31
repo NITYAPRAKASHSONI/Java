@@ -1,0 +1,25 @@
+import java.util.*;
+public class Project{
+    public static void main(String args[])
+    {
+        String s="abbcccddddeeeee";
+        int i,max=-1;
+        char c=' ';
+        int a[]=new int[127];
+       System.out.println();
+       for(i=0;i<s.length();i++)
+       {
+           a[s.charAt(i)]=a[s.charAt(i)]+1;
+       }
+       
+       for(i=0;i<s.length();i++)
+       {
+           if(max<a[s.charAt(i)])
+           {
+             max=a[s.charAt(i)];
+             c=s.charAt(i);
+           }
+       }
+       System.out.println(c+" ");
+    }
+}
