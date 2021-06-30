@@ -1,0 +1,43 @@
+import java.util.*;
+public class Project{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        Random r=new Random();
+        
+       // double ran=((Math.random())*(10));
+        int t=r.nextInt(9)+1;
+       // System.out.println(t);
+      
+        int atp=0,cnt=0;
+        int score=10;
+        int temp=1;
+        while(temp>0)
+        {
+            
+            System.out.println("enter the number to guess randomly in the range between 1 to 10");
+       // System.out.println();
+       int n=sc.nextInt();
+            if(t>n)
+            {
+                int diff=t-n;
+                System.out.println("you need to enter higher value");
+                cnt++;
+            }
+            else if(t<n)
+            {
+             int diff=t-n;
+                System.out.println("you need to enter lower value");  
+                cnt++;
+            }
+            else{
+                System.out.println("wow congrutualation you guess right number");
+                temp=0;
+            }
+        }
+        score-=cnt;
+        System.out.println("your score is " + score + " as you took " + cnt + " attempt to guess the number");
+        
+        
+    }
+}
