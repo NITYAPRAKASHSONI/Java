@@ -1,0 +1,95 @@
+import java.util.*;
+public class Project{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("which oppenration you want to perform");
+        System.out.println("select the openration");
+        System.out.println("1.addtion \n 2.subtration \n 3.multiplication \n 4.division \n 5.modulo \n 6.squareroot \n 7.power \n 8.square");
+        int n=sc.nextInt();
+        switch(n)
+        {
+            case 1:
+                System.out.println("enter the two number to find addition");
+                int a=sc.nextInt();
+                int b=sc.nextInt();
+                int sum=0;
+                
+                sum=a+b;
+                System.out.println(sum);
+                break;
+            
+            case 2:
+                System.out.println("enter the two number to find subtraction");
+                int a1=sc.nextInt();
+                int b1=sc.nextInt();
+                int sub=0;
+                
+                sum=a1-b1;
+                System.out.println(sub);
+                break;
+                
+            case 3:
+                System.out.println("enter the two number to find multiplication");
+                double a2=sc.nextInt();
+                double b2=sc.nextInt();
+                double mul=0;
+                
+                mul=a2*b2;
+                System.out.println(mul);
+                break;
+            case 4:
+                System.out.println("enter the two number to find division");
+                double a3=sc.nextInt();
+                double b3=sc.nextInt();
+                double div=0;
+                
+                div=a3/b3;
+                System.out.println(div);
+                break;
+            case 5:
+                System.out.println("enter the two number to find modulo");
+                int a4=sc.nextInt();
+                int b4=sc.nextInt();
+                int mod=0;
+                
+                mod=a4%b4;
+                System.out.println(mod);
+                break;
+            
+            case 6:
+                System.out.println("enter the  number to find square root");
+                int a5=sc.nextInt();
+                //int b4=sc.nextInt();
+                double sqrt=0;
+                
+                sqrt=Math.sqrt(a5);
+                System.out.println(sqrt);
+                break;
+            case 7:
+                System.out.println("enter the two number to find power  ");
+                int a6=sc.nextInt();
+                int b6=sc.nextInt();
+                double pow=0;
+                
+                pow=Math.pow(a6, b6);
+                System.out.println(pow);
+                break;
+            case 8:
+                System.out.println("enter the  number to find square");
+                double a7=sc.nextDouble();
+                //int b4=sc.nextInt();
+                double sqr=0;
+                
+                sqr=Math.pow(a7,2);
+                System.out.println(sqr);
+                break;
+            default:
+                System.out.println("Invalid number choosen to perform operation");
+                
+        }
+    }
+}
+
+
+
