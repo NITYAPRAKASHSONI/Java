@@ -1,0 +1,42 @@
+import java.util.*;
+class Stack{
+    int[] stack=new int[5];
+    int top=0;
+    public void push(int data)
+    {
+     
+         stack[top]=data;
+         top++;
+     
+    }
+    public void show()
+    {
+        for(int x:stack)
+        {
+          System.out.print(x + " ");   
+        }
+    }
+    public int pop()
+    {
+        int data;
+        top--;
+        data=stack[top];
+        stack[top]=0;
+        return data;
+    }
+}
+public class Project{
+    public static void main(String args[])
+    {
+     Stack num=new Stack();
+     num.push(12);
+     num.push(18);
+     num.push(24);
+     num.push(30);
+     num.push(36);
+     num.show();
+     System.out.println();
+     System.out.println(num.pop());
+    
+    }
+}
