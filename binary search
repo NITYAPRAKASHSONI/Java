@@ -1,0 +1,38 @@
+class search{
+    public int array(int key)
+    {
+        int a[]={11,21,32,43,54,65,75,76,87,98,480};
+        int l=0,h=a.length-1,mid;
+        while(l<=h)
+        {
+            mid=(l+h)/2;
+            if(key==a[mid])
+            {
+             return  mid;  
+            }
+            else if(key<a[mid])
+            {
+                h=mid-1;
+            }
+            else{
+                l=mid+1;
+            }
+        }
+        return -1;
+    }
+}
+public class Project{
+    public static void main(String[] args)
+    {
+        search s=new search();
+         
+         int result=s.array(65);
+         if(result==-1)
+         {
+             System.out.println("key not found");
+         }
+         else{
+             System.out.println("key found at "+  result);
+         }
+    }
+}
